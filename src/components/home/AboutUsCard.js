@@ -17,6 +17,7 @@ export default function AboutUsCard() {
           display: "flex",
           justifyContent: "center",
           alignContent: "center",
+          flexWrap: "wrap",
         }}
       >
         <img

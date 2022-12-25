@@ -39,7 +39,14 @@ export default function Home() {
         </Slide>
       </Box>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
-        <Box sx={{ display: "flex", width: "60%", flexWrap: "wrap" }}>
+        <Box
+          sx={{
+            display: "flex",
+            width: "80%",
+            flexWrap: "wrap",
+            justifyContent: "center",
+          }}
+        >
           <Card
             sx={{
               width: "15rem",
@@ -125,13 +132,42 @@ export default function Home() {
               </Box>
             </CardActionArea>
           </Card>
+          <Card
+            sx={{
+              width: "15rem",
+              height: "10rem",
+              backgroundColor: "#98D7C2",
+              margin: "4rem",
+              display: "flex",
+              alignContent: "center",
+            }}
+          >
+            <CardActionArea>
+              <Box
+                sx={{
+                  height: "100%",
+                  width: "100%",
+                  alignContent: "center",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignSelf: "center",
+                }}
+              >
+                <Typography variant="h4" sx={{ alignSelf: "center" }}>
+                  Noticeboard
+                </Typography>
+              </Box>
+            </CardActionArea>
+          </Card>
         </Box>
       </Box>
       <Box>
         <Typography variant="h5" align="center">
           About us
         </Typography>
-        <Box sx={{ display: "flex", flexWrap: "wrap" }}>
+        <Box
+          sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
+        >
           <AboutUsCard />
           <AboutUsCard />
           <AboutUsCard />
@@ -142,7 +178,9 @@ export default function Home() {
         <Typography variant="h5" align="center">
           Our Courses
         </Typography>
-        <Box sx={{ display: "flex", flexWrap: "wrap" }}>
+        <Box
+          sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
+        >
           <CourseCard />
           <CourseCard />
           <CourseCard />
@@ -159,7 +197,10 @@ export default function Home() {
         <Typography variant="h5" align="center">
           Our Meritorius Students
         </Typography>
-        <Box sx={{ display: "flex", flexWrap: "wrap" }}>
+        <Box
+          sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}
+        >
+          <StudentCard></StudentCard>
           <StudentCard></StudentCard>
           <StudentCard></StudentCard>
           <StudentCard></StudentCard>
