@@ -7,6 +7,7 @@ import {
   Slide,
 } from "@mui/material";
 import { Box } from "@mui/system";
+import AboutUsCard from "../components/home/AboutUsCard";
 import CourseCard from "../components/home/CourseCard";
 import ImageSlider from "../components/home/imageSlider";
 import StudentCard from "../components/home/StudentCard";
@@ -124,6 +125,17 @@ export default function Home() {
               </Box>
             </CardActionArea>
           </Card>
+        </Box>
+      </Box>
+      <Box>
+        <Typography variant="h5" align="center">
+          About us
+        </Typography>
+        <Box sx={{ display: "flex", flexWrap: "wrap" }}>
+          <AboutUsCard />
+          <AboutUsCard />
+          <AboutUsCard />
+          <AboutUsCard />
         </Box>
       </Box>
       <Box>
