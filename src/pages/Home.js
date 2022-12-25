@@ -4,8 +4,12 @@ import {
   CardActionArea,
   CardContent,
   Card,
+  Slide,
 } from "@mui/material";
 import { Box } from "@mui/system";
+import CourseCard from "../components/home/CourseCard";
+import ImageSlider from "../components/home/imageSlider";
+import StudentCard from "../components/home/StudentCard";
 
 export default function Home() {
   let logo = require("../assets/red_cross_logo.jpg");
@@ -28,7 +32,11 @@ export default function Home() {
         </Box>
       </Box>
       <hr></hr>
-      <Box></Box>
+      <Box>
+        <Slide>
+          <ImageSlider />
+        </Slide>
+      </Box>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Box sx={{ display: "flex", width: "60%", flexWrap: "wrap" }}>
           <Card
@@ -111,7 +119,7 @@ export default function Home() {
                 }}
               >
                 <Typography variant="h4" sx={{ alignSelf: "center" }}>
-                  Apply Online
+                  Payment Portal
                 </Typography>
               </Box>
             </CardActionArea>
@@ -120,9 +128,81 @@ export default function Home() {
       </Box>
       <Box>
         <Typography variant="h5" align="center">
+          Our Courses
+        </Typography>
+        <Box sx={{ display: "flex", flexWrap: "wrap" }}>
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+        </Box>
+      </Box>
+      <Box>
+        <Typography variant="h5" align="center">
           Our Meritorius Students
         </Typography>
-        <Box></Box>
+        <Box sx={{ display: "flex", flexWrap: "wrap" }}>
+          <StudentCard></StudentCard>
+          <StudentCard></StudentCard>
+          <StudentCard></StudentCard>
+          <StudentCard></StudentCard>
+          <StudentCard></StudentCard>
+          <StudentCard></StudentCard>
+          <StudentCard></StudentCard>
+          <StudentCard></StudentCard>
+          <StudentCard></StudentCard>
+        </Box>
+      </Box>
+      <Box
+        sx={{
+          backgroundColor: "#EFE7BC",
+          padding: "5rem 8rem 2rem 5rem",
+          display: "flex",
+        }}
+      >
+        <Box>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.382475909281!2d75.4017772156394!3d29.99717218189961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39111f3c5517dda5%3A0xa6e40ac868de7526!2sRed%20Cross%20Computer%20Centre!5e0!3m2!1sen!2sin!4v1671710146481!5m2!1sen!2sin"
+            width="400"
+            height="300"
+            style={{ border: "0" }}
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            marginLeft: "6rem",
+          }}
+        >
+          <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+            Address
+          </Typography>
+          <Typography variant="h6">
+            Red Cross Computer Center, New Court Road,Near Bus Stand , Mansa
+          </Typography>
+          <br></br>
+          <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+            email
+          </Typography>
+          <Typography variant="h6">apexmansa@gmail.com</Typography>
+          <br></br>
+          <Typography variant="h6" sx={{ fontWeight: "bold" }}>
+            {" "}
+            Phone No
+          </Typography>
+          <Typography variant="h6">7589093002</Typography>
+        </Box>
       </Box>
     </Box>
   );
