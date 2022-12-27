@@ -11,6 +11,7 @@ import AboutUsCard from "../components/home/AboutUsCard";
 import CourseCard from "../components/home/CourseCard";
 import ImageSlider from "../components/home/imageSlider";
 import StudentCard from "../components/home/StudentCard";
+import { DataGrid } from "@mui/x-data-grid";
 
 export default function Home() {
   let logo = require("../assets/red_cross_logo.jpg");
@@ -155,6 +156,10 @@ export default function Home() {
               >
                 <Typography variant="h4" sx={{ alignSelf: "center" }}>
                   Noticeboard
+                  <DataGrid
+                    columns={[{ field: "Date" }, { field: "Notice" }]}
+                    rows={[]}
+                  ></DataGrid>
                 </Typography>
               </Box>
             </CardActionArea>
@@ -192,6 +197,12 @@ export default function Home() {
           <CourseCard />
           <CourseCard />
         </Box>
+      </Box>
+      <Box>
+        <Typography variant="h5" align="center">
+          Noticeboard
+        </Typography>
+        <Box></Box>
       </Box>
       <Box>
         <Typography variant="h5" align="center">
